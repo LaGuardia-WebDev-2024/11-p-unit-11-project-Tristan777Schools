@@ -24,41 +24,60 @@ Select ONE Additional
     <button id="mem1-button">Album #1</button>
     <button id="mem2-button">Album #2</button>
     <button id="mem3-button">Album #3</button>
-    <h1>My Top 3 Albums of <span>This Year</span></h1>
+    <h1>My Top 3<span> Tyler, The Creator</span> Albums</h1>
     <ol>
       <li>
-        <h3 id="mem1">Album #1</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem1"><img src="https://static.wikia.nocookie.net/tylerthecreator/images/f/f2/Flower_Boy_logo_2.png/revision/latest/scale-to-width-down/300?cb=20251028014222"></h3>
+        <p class="fb">Flower Boy is the fifth studio album by the American rapper and producer Tyler, the Creator, released on July 21, 2017, by Columbia Records. Produced entirely by Tyler, the album features guest vocals from a range of artists, including Frank Ocean, ASAP Rocky, Anna of the North, Lil Wayne, Kali Uchis, Steve Lacy, Estelle, Jaden Smith and Rex Orange County.<br>
+<br>
+Flower Boy was supported by four singles: "Who Dat Boy" / "911", "Boredom", "I Ain't Got Time!" and "See You Again". The album received widespread acclaim from critics for its smoothness, unique blend of genres, collaborations and its production. It debuted at number two on the US Billboard 200 chart. The album was named among the best albums of 2017 and the decade by multiple publications and was nominated for Best Rap Album at the 2018 Grammy Awards.
+</p>
+<h3 class="fb">Why Do I Like This Album?</h3>
+<p class="fb">This album is very vulnerable and explores themes such as lovesickness, loneliness, and sexuality. It features hip-hop, neo-soul, and chilled jazz. The album is also home to my favorite song of his, "911 / Mr. Lonely," which features the best of all worlds. I find myself relating to this album the most compared to any others. I also adore the aesthetic and themes, with sunflowers, bees, cars, and a warm, vibrant coloring.</p>
+
+<img class="fb" src="https://static.wikia.nocookie.net/tylerthecreator/images/a/a3/Tyler%2C_the_Creator_-_Flower_Boy.jpg/revision/latest/scale-to-width-down/268?cb=20250125135049">
       </li>
 
       <li>
-        <h3 id="mem2">Album #2</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem2"><img src="https://static.wikia.nocookie.net/logopedia/images/d/d9/Cherry_Bomb_Logo.png/revision/latest?cb=20250426095149" width="200"></h3>
+        <p class="cb">Cherry Bomb is the fourth studio album by the American rapper Tyler, the Creator. It was released on April 13, 2015, by Odd Future Records. On April 9, 2015, the album was informally announced on iTunes, along with the release of two tracks. Production was handled entirely by Tyler himself, with additional contributions by Incubus guitarist Mike Einziger. The album features guest appearances from Schoolboy Q, Charlie Wilson, Kali Uchis, Kanye West, Lil Wayne, Pharrell Williams and Austin Feinstein, among others. The album was supported by two singles: "Deathcamp" and "F*****g Young / Perfect", accompanied by 2 music videos.<br>
+<br>
+Cherry Bomb received generally positive reviews from critics. It debuted at number four on the US Billboard 200, selling 51,000 copies in its first week.</p>
+<h3 class="cb">Why Do I Like This Album?</h3>
       </li>
 
       <li>
-        <h3 id="mem3">Album #3</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLdtArvjLd4KF0FwfkycHxGUzN_bNK6si4mQ&s" width="300"></h3>
+        <p class="ch">Chromakopia is the eighth studio album by the American rapper Tyler, the Creator. It was released through Columbia Records on October 28, 2024, serving as the follow-up to Call Me If You Get Lost (2021). Chromakopia was written, produced, and arranged by Tyler himself. The album features guest appearances from Daniel Caesar, Doechii, GloRilla, LaToiya Williams, Lil Wayne, Lola Young, Santigold, Schoolboy Q, Sexyy Red, and Teezo Touchdown, with physical releases of the album additionally featuring Playboi Carti.<br>
+<br>
+The album blends different genres like hip-hop, jazz, and soul, evocative of Tyler's previous releases Flower Boy (2017) and Igor (2019). Conceptually, Chromakopia is narrated by Tyler's mother, Bonita Smith, as a diary that pieces together Tyler's perspective on past timeline experiences separated by tracks. The album received widespread acclaim from critics, who praised the lyricism, cohesiveness, and production, and even noted its messy and confusing nature as a positive.<br>
+<br>
+Chromakopia was supported by the singles "Noid", "Sticky", and "Like Him", as well as the promotional singles "St. Chroma" and "Thought I Was Dead". The album was a commercial success, debuting at number one in nine countries. In the United States, the album debuted at the top of the Billboard 200, earning Tyler his third US number-one album. Several other songs from the album also charted on the Billboard Hot 100, such as "Noid" and "St. Chroma". At the 68th Annual Grammy Awards, the album received nominations for Album of the Year, Best Rap Album and Best Album Cover, in addition to "Darling, I" receiving a nomination for Best Rap Performance and "Sticky" for Best Rap Song. In support of the album, Tyler embarked on Chromakopia: The World Tour between February 2025 and March 2026.</p>
+<h3 class="ch">Why Do I Like This Album?</h3>
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-
+$(".fb").hide();
+$(".cb").hide();
+$(".ch").hide();
       // ======================== Button #1
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
+        $(".fb").show(500);
       });
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
+        $(".cb").show(500);
       });
 
       // ======================== Button #3
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
-        $("#mem3").text("Coding Parties! 🎉");
+        $(".ch").show(500);
       });
 
 
