@@ -10,3 +10,19 @@ html {
 h1 {
   font-family: "Poetsen One", sans-serif;
 }
+
+.fb {
+  background-color: rgb(255, 176, 40);
+}
+
+.cb {
+  background-color: rgb(255, 183, 197);
+}
+
+.ch {
+  background-color: rgb(0, 133, 60);
+}
+
+#tyler {
+  color: rgb(194, 9, 46);
+}
